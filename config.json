@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "url": {
+      "rec": "/"
+    }
+  },
+  "pro" :{
+    "url": {
+      "rec": "/120271554:AAGYxfM50KWuaSkBXT_HRnmmq9iw8YrOcgc",
+      "snd": "https://api.telegram.org/bot120271554:AAGYxfM50KWuaSkBXT_HRnmmq9iw8YrOcgc/"
+    }
+  }
+}
