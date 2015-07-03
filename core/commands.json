@@ -1,4 +1,16 @@
 [{
+	"cmd": "info",
+	"aliases": [],
+	"processor": "admin.js"
+}, {
+	"cmd": "addAccess",
+	"aliases": [],
+	"processor": "admin.js"
+}, {
+	"cmd": "removeAccess",
+	"aliases": [],
+	"processor": "admin.js"
+}, {
 	"cmd": "hi",
 	"aliases": ["سلام"],
 	"processor": "hi.js"

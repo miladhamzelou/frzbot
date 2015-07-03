@@ -8,6 +8,10 @@ var functions = {
 			access = jsonfile.readFileSync(file);
 		}
 	},
+	reload: function() {
+		var file = './core/access.json';
+		access = jsonfile.readFileSync(file);
+	},
   checkAccess: function(cmd, callback) {
 		var hasAccess = true;
 		var keys = Object.keys(access);
