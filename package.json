@@ -1,0 +1,15 @@
+{
+  "name": "FRZBot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "http": "set NODE_ENV=dev&&node ./bin/http",
+    "https": "set NODE_ENV=pro&&node ./bin/https"
+  },
+  "dependencies": {
+    "body-parser": "~1.12.4",
+    "express": "~4.12.4",
+    "morgan": "~1.5.3",
+    "request": "^2.58.0"
+  }
+}
