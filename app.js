@@ -17,7 +17,6 @@ core.init();
 
 app.post(config[app.get('env')].url.rec, function (req, res) {
   res.send('ok');
-  console.log(req.body);
   var update = req.body;
   core.proccessUpdate(update);
 });
