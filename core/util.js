@@ -1,5 +1,6 @@
 var request = require('request');
 var http = require('http');
+var https = require('https');
 var fs = require('fs');
 var jsonfile = require('jsonfile');
 var config = jsonfile.readFileSync('./config.json');
@@ -14,7 +15,14 @@ var functions = {
     var fileName = './temp/' + Math.floor((Math.random() * 999999)) + ext;
     var file = fs.createWriteStream(fileName);
 
-    http.get(data.imageUrl, function (response) {
+    if(data.imageUrl.indexOf('https') > -1) {
+      https.get(data.imageUrl, callback);
+    }
+    else {
+      http.get(data.imageUrl, callback);
+    }
+
+    function callback(response) {
       response.pipe(file);
       file.on('finish', function () {
         file.close(function() {
@@ -33,7 +41,7 @@ var functions = {
           });
         });
       });
-    });
+    }
   }
 };
 

@@ -3,10 +3,6 @@
 	"aliases": ["سلام"],
 	"processor": "hi.js"
 }, {
-	"cmd": "help",
-	"aliases": ["کمک", "h"],
-	"processor": "help.js"
-}, {
 	"cmd": "weather",
 	"aliases": ["w", "هوا"],
 	"processor": "weather.js"
@@ -42,10 +38,6 @@
 	"cmd": "9gag",
 	"aliases": ["9g"],
 	"processor": "9gag.js"
-}, {
-	"cmd": "chat",
-	"aliases": ["ch"],
-	"processor": "cleverBot.js"
 }, {
 	"cmd": "boobs",
 	"aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],
