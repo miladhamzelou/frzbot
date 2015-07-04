@@ -3,7 +3,7 @@ var util = require('./../util');
 var functions = {
   execute: function (cmd) {
     var message = '';
-    message += 'لیست دستورات فری بات' + '\n';
+    message += 'لیست دستورات FRZBot' + '\n';
     message += 'آب و هوا:' + '\n';
     message += '/weather [شهر]' + '\n';
     message += 'shortcuts: /w /هوا' + '\n';
