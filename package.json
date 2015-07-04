@@ -13,6 +13,7 @@
     "feed-read": "0.0.1",
     "jsonfile": "^2.2.1",
     "mathjs": "^1.7.0",
+    "mongoose": "^4.0.6",
     "morgan": "~1.5.3",
     "request": "^2.58.0"
   }

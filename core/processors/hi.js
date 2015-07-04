@@ -1,10 +1,10 @@
 var util = require('./../util');
 
 var functions = {
-  execute: function(cmd) {
+  execute: function (cmd) {
     var data = {
       chat_id: cmd.chat.id,
-      text: 'Hello ' + cmd.from.first_name + '!'
+      text: 'Hello ' + cmd.sender.firstName + '!'
     };
     util.sendMessage(data);
   }
