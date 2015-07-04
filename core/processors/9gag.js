@@ -42,13 +42,13 @@ var functions = {
             chat_id: cmd.chat.id,
             text: result.title
           };
-          util.sendMessage(data);
+          util.sendMessage(dataText);
 
           var dataPhoto = {
             chat_id: cmd.chat.id,
             imageUrl: imageUrl
           };
-          util.sendImageFromUrl(data);
+          util.sendImageFromUrl(dataPhoto);
         }
       });
     });
