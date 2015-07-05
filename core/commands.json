@@ -11,6 +11,10 @@
   "aliases": [],
   "processor": "admin.js"
 }, {
+  "cmd": "getGroups",
+  "aliases": [],
+  "processor": "admin.js"
+}, {
   "cmd": "help",
   "aliases": ["کمک"],
   "processor": "help.js"
