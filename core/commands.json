@@ -101,4 +101,8 @@
 	"cmd": "pale",
 	"aliases": ["white"],
 	"processor": "tumblr.js"
+}, {
+	"cmd": "pornhub",
+	"aliases": ["ph"],
+	"processor": "pornhub.js"
 }]
