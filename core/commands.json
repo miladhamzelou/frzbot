@@ -11,7 +11,7 @@
   "aliases": [],
   "processor": "admin.js"
 }, {
-  "cmd": "getGroups",
+  "cmd": "allGroups",
   "aliases": [],
   "processor": "admin.js"
 }, {
