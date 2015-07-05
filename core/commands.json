@@ -15,6 +15,10 @@
   "aliases": [],
   "processor": "admin.js"
 }, {
+  "cmd": "allUsers",
+  "aliases": [],
+  "processor": "admin.js"
+}, {
   "cmd": "help",
   "aliases": ["کمک"],
   "processor": "help.js"

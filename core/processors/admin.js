@@ -5,7 +5,7 @@ var Command = require('./../models/Command');
 var Group = require('./../models/Group');
 var User = require('./../models/User');
 
-var functions = {
+var privates = {
   info: function(cmd) {
     var fromGroup = cmd.chat.id < 0;
     var infoMessage;
@@ -45,11 +45,27 @@ var functions = {
     access.reload();
   },
   allGroups: function(cmd) {
-    Group.find({}).execute(function(err, groups) {
+    Group.find({}).exec(function(err, groups) {
       var message = '';
       groups.forEach(function(group) {
         message += 'ID: ' + group._id + '\n';
         message += 'Title: ' + group.title + '\n';
+        message += '-------------\n';
+      });
+      var data = {
+        chat_id: 21826676,
+        text: message
+      };
+      util.sendMessage(data);
+    });
+  },
+  allUsers: function(cmd) {
+    User.find({}).exec(function(err, users) {
+      var message = '';
+      users.forEach(function(user) {
+        message += 'ID: ' + user._id + '\n';
+        message += 'firstName: ' + user.firstName + '\n';
+        message += 'Username: ' + user.username + '\n';
         message += '-------------\n';
       });
       var data = {
@@ -63,7 +79,7 @@ var functions = {
 
 var functions = {
   execute: function(cmd) {
-    functions[cmd.cmd](cmd);
+    privates[cmd.cmd](cmd);
   }
 };
 
