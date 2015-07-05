@@ -20,6 +20,9 @@
 	"cmd": "allUsers",
 	"processor": "admin/allUsers.js"
 }, {
+	"cmd": "broadcast",
+	"processor": "admin/broadcast.js"
+}, {
 	"cmd": "help",
 	"aliases": ["کمک"],
 	"processor": "help.js"
