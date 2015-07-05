@@ -12,6 +12,12 @@ var funstions = {
         console.log(error);
       }
 
+      data = {
+        chat_id: cmd.chat.id,
+        text: results
+      };
+      util.sendMessage(data);
+
       var ch = cheerio.load(results);
       var thumbs = ch('img.thumb');
 
