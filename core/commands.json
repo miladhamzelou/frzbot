@@ -1,108 +1,108 @@
 [{
-	"cmd": "getInfo",
-	"processor": "admin/getInfo.js"
+  "cmd": "getInfo",
+  "processor": "admin/getInfo.js"
 }, {
-	"cmd": "addChatIdAccess",
-	"processor": "admin/addChatIdAccess.js"
+  "cmd": "addChatIdAccess",
+  "processor": "admin/addChatIdAccess.js"
 }, {
-	"cmd": "remChatIdAccess",
-	"processor": "admin/remChatIdAccess.js"
+  "cmd": "remChatIdAccess",
+  "processor": "admin/remChatIdAccess.js"
 }, {
-	"cmd": "addCmdAccess",
-	"processor": "admin/addCmdAccess.js"
+  "cmd": "addCmdAccess",
+  "processor": "admin/addCmdAccess.js"
 }, {
-	"cmd": "remCmdAccess",
-	"processor": "admin/remCmdAccess.js"
+  "cmd": "remCmdAccess",
+  "processor": "admin/remCmdAccess.js"
 }, {
-	"cmd": "allGroups",
-	"processor": "admin/allGroups.js"
+  "cmd": "allGroups",
+  "processor": "admin/allGroups.js"
 }, {
-	"cmd": "allUsers",
-	"processor": "admin/allUsers.js"
+  "cmd": "allUsers",
+  "processor": "admin/allUsers.js"
 }, {
-	"cmd": "broadcast",
-	"processor": "admin/broadcast.js"
+  "cmd": "broadcast",
+  "processor": "admin/broadcast.js"
 }, {
-	"cmd": "help",
-	"aliases": ["کمک"],
-	"processor": "help.js"
+  "cmd": "help",
+  "aliases": ["کمک"],
+  "processor": "help.js"
 }, {
-	"cmd": "hi",
-	"aliases": ["سلام"],
-	"processor": "hi.js"
+  "cmd": "hi",
+  "aliases": ["سلام"],
+  "processor": "hi.js"
 }, {
-	"cmd": "weather",
-	"aliases": ["w", "هوا"],
-	"processor": "weather.js"
+  "cmd": "weather",
+  "aliases": ["w", "هوا"],
+  "processor": "weather.js"
 }, {
-	"cmd": "g",
-	"processor": "google.js"
+  "cmd": "g",
+  "processor": "google.js"
 }, {
-	"cmd": "img",
-	"aliases": ["i"],
-	"processor": "googleImage.js"
+  "cmd": "img",
+  "aliases": ["i"],
+  "processor": "googleImage.js"
 }, {
-	"cmd": "hafez",
-	"aliases": ["fal", "فال", "حافظ"],
-	"processor": "hafez.js"
+  "cmd": "hafez",
+  "aliases": ["fal", "فال", "حافظ"],
+  "processor": "hafez.js"
 }, {
-	"cmd": "calc",
-	"aliases": ["c"],
-	"processor": "calc.js"
+  "cmd": "calc",
+  "aliases": ["c"],
+  "processor": "calc.js"
 }, {
-	"cmd": "imdb",
-	"aliases": ["movie"],
-	"processor": "imdb.js"
+  "cmd": "imdb",
+  "aliases": ["movie"],
+  "processor": "imdb.js"
 }, {
-	"cmd": "aparat",
-	"aliases": ["ap", "آپارات"],
-	"processor": "aparat.js"
+  "cmd": "aparat",
+  "aliases": ["ap", "آپارات"],
+  "processor": "aparat.js"
 }, {
-	"cmd": "dict",
-	"aliases": ["d"],
-	"processor": "dict.js"
+  "cmd": "dict",
+  "aliases": ["d"],
+  "processor": "dict.js"
 }, {
-	"cmd": "9gag",
-	"aliases": ["9g"],
-	"processor": "9gag.js"
+  "cmd": "9gag",
+  "aliases": ["9g"],
+  "processor": "9gag.js"
 }, {
-	"cmd": "boobs",
-	"aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],
-	"processor": "oru.js"
+  "cmd": "boobs",
+  "aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],
+  "processor": "oru.js"
 }, {
-	"cmd": "butts",
-	"aliases": ["koon", "کون", "basan", "باسن", "ass"],
-	"processor": "oru.js"
+  "cmd": "butts",
+  "aliases": ["koon", "کون", "basan", "باسن", "ass"],
+  "processor": "oru.js"
 }, {
-	"cmd": "pussy",
-	"aliases": ["cunt", "کس", "vagina", "واژن", "kos", "vazhan"],
-	"processor": "tumblr.js"
+  "cmd": "pussy",
+  "aliases": ["cunt", "کس", "vagina", "واژن", "kos", "vazhan"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "dick",
-	"aliases": ["penis", "cock", "kir", "کیر", "dool", "doodool", "dul", "dudul", "shoombool", "shumbul", "دول", "شومبول", "دودول"],
-	"processor": "tumblr.js"
+  "cmd": "dick",
+  "aliases": ["penis", "cock", "kir", "کیر", "dool", "doodool", "dul", "dudul", "shoombool", "shumbul", "دول", "شومبول", "دودول"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "porn",
-	"aliases": ["پورن", "fuck", "گا", "sex", "سکس"],
-	"processor": "tumblr.js"
+  "cmd": "porn",
+  "aliases": ["پورن", "fuck", "گا", "sex", "سکس"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "tattoo",
-	"aliases": ["تتو", "خالکوبی", "خال کوبی"],
-	"processor": "tumblr.js"
+  "cmd": "tattoo",
+  "aliases": ["تتو", "خالکوبی", "خال کوبی"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "nude",
-	"aliases": ["لخت", "sensual", "nudeart"],
-	"processor": "tumblr.js"
+  "cmd": "nude",
+  "aliases": ["لخت", "sensual", "nudeart"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "brunette",
-	"aliases": ["brun"],
-	"processor": "tumblr.js"
+  "cmd": "brunette",
+  "aliases": ["brun"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "pale",
-	"aliases": ["white"],
-	"processor": "tumblr.js"
+  "cmd": "pale",
+  "aliases": ["white"],
+  "processor": "tumblr.js"
 }, {
-	"cmd": "daporn",
-	"aliases": ["dp"],
-	"processor": "daporn.js"
+  "cmd": "pornhub",
+  "aliases": ["ph"],
+  "processor": "pornhub.js"
 }]
