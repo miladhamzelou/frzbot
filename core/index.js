@@ -54,7 +54,9 @@ var privates = {
   createCommand: function (update) {
     var command = new Command();
     command.cmd = update.command.cmd;
-    command.args = update.message.text.substr(update.message.text.indexOf(' ') + 1);
+    if (update.message.text.indexOf(' ') > -1) {
+      command.args = update.message.text.substr(update.message.text.indexOf(' ') + 1);
+    }
     command.processor = update.command.processor;
     command.sender = update.sender;
     command.group = update.group;
@@ -67,7 +69,7 @@ var privates = {
     });
   },
   checkAccess: function (command) {
-    Access.find({}).exec(function(err, accesses) {
+    Access.find({}).exec(function (err, accesses) {
       var hasAccess = true;
       for (var i = 0; i < accesses.length; i++) {
         if (accesses[i].cmds.indexOf(command.cmd) > -1 && accesses[i].chatIds.indexOf(command.chat.id) === -1) {
@@ -100,7 +102,7 @@ var functions = {
     var tmpCommand = update.message.text.substr(1).split(' ')[0];
     for (var i = 0; i < commands.length; i++) {
       if (commands[i].cmd === tmpCommand ||
-            (commands[i].aliases && commands[i].aliases.indexOf(tmpCommand) > -1)) {
+        (commands[i].aliases && commands[i].aliases.indexOf(tmpCommand) > -1)) {
         update.command = commands[i];
         break;
       }
