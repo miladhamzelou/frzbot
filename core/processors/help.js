@@ -30,6 +30,9 @@ var functions = {
     message += '۹گگ:' + '\n';
     message += '/9gag (hot/trend/nsfw/gif)' + '\n';
     message += 'shortcuts: /9g' + '\n';
+    message += 'متن آهنگ:' + '\n';
+    message += '/lyric [نام آهنگ]' + '\n';
+    message += 'shortcuts: /l' + '\n';
     message += '\n' + '* کروشه ها پارامترهای اجباری و پرانتزها پارامترهای اختیاری هستند.' + '\n';
     message += '** نیازی به تایپ کردن کروشه و پرانتز نیست.' + '\n';
 

@@ -66,6 +66,10 @@
   "aliases": ["9g"],
   "processor": "9gag.js"
 }, {
+  "cmd": "lyric",
+  "aliases": ["l"],
+  "processor": "lyric.js"
+}, {
   "cmd": "boobs",
   "aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],
   "processor": "oru.js"
