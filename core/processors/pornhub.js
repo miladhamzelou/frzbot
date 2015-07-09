@@ -41,7 +41,7 @@ var functions = {
                 chat_id: cmd.chat.id,
                 imageUrl: result[index]
               };
-              util.sendImageFromUrl(data);
+              util.sendImageFromUrl(data, true);
             }
             ph.exit();
           });

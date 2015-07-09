@@ -3,6 +3,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs');
 var jsonfile = require('jsonfile');
+var shelljs = require('shelljs');
 var config = jsonfile.readFileSync('./config.json');
 var env = process.env.NODE_ENV;
 
@@ -10,7 +11,7 @@ var functions = {
   sendMessage: function(data) {
     request.post(config[env].url.snd + 'sendMessage').form(data);
   },
-  sendImageFromUrl: function(data) {
+  sendImageFromUrl: function(data, resize) {
     var ext = data.imageUrl.substr(data.imageUrl.length - 4);
     var fileName = './temp/' + Math.floor((Math.random() * 999999)) + ext;
     var file = fs.createWriteStream(fileName);
@@ -25,20 +26,31 @@ var functions = {
     function callback(response) {
       response.pipe(file);
       file.on('finish', function () {
-        file.close(function() {
-          delete data.imageUrl;
-          var method;
-          if(ext === '.gif') {
-            method = 'sendDocument';
-            data.document = fs.createReadStream(fileName);
+        if(resize) {
+          var shellCommand = 'gifsicle --resize 160x120 --colors 128 --batch ' + fileName;
+          var result = shelljs.exec(shellCommand, {silent: true});
+          if (result.code !== 0) {
+            console.log('err');
           }
-          else {
-            method = 'sendPhoto';
-            data.photo = fs.createReadStream(fileName);
-          }
-          request.post({url: config[env].url.snd + method, formData: data}, function() {
-            fs.unlink(fileName);
-          });
+        }
+        send();
+      });
+    }
+
+    function send() {
+      file.close(function() {
+        delete data.imageUrl;
+        var method;
+        if(ext === '.gif') {
+          method = 'sendDocument';
+          data.document = fs.createReadStream(fileName);
+        }
+        else {
+          method = 'sendPhoto';
+          data.photo = fs.createReadStream(fileName);
+        }
+        request.post({url: config[env].url.snd + method, formData: data}, function() {
+          fs.unlink(fileName);
         });
       });
     }
