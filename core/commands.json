@@ -113,8 +113,4 @@
   "cmd": "definebabe",
   "aliases": ["db"],
   "processor": "definebabe.js"
-}, {
-  "cmd": "definebabe2",
-  "aliases": ["db2"],
-  "processor": "definebabe2.js"
 }]
