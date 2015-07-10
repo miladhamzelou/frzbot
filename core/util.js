@@ -7,18 +7,17 @@ var config = jsonfile.readFileSync('./config.json');
 var env = process.env.NODE_ENV;
 
 var functions = {
-  sendMessage: function(data) {
+  sendMessage: function (data) {
     request.post(config[env].url.snd + 'sendMessage').form(data);
   },
-  sendImageFromUrl: function(data, resize) {
+  sendImageFromUrl: function (data) {
     var ext = data.imageUrl.substr(data.imageUrl.length - 4);
     var fileName = './temp/' + Math.floor((Math.random() * 999999)) + ext;
     var file = fs.createWriteStream(fileName);
 
-    if(data.imageUrl.indexOf('https') > -1) {
+    if (data.imageUrl.indexOf('https') > -1) {
       https.get(data.imageUrl, callback);
-    }
-    else {
+    } else {
       http.get(data.imageUrl, callback);
     }
 
@@ -38,18 +37,20 @@ var functions = {
     }
 
     function send() {
-      file.close(function() {
+      file.close(function () {
         delete data.imageUrl;
         var method;
-        if(ext === '.gif') {
+        if (ext === '.gif') {
           method = 'sendDocument';
           data.document = fs.createReadStream(fileName);
-        }
-        else {
+        } else {
           method = 'sendPhoto';
           data.photo = fs.createReadStream(fileName);
         }
-        request.post({url: config[env].url.snd + method, formData: data}, function() {
+        request.post({
+          url: config[env].url.snd + method,
+          formData: data
+        }, function () {
           fs.unlink(fileName);
         });
       });
