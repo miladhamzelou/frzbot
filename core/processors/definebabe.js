@@ -7,7 +7,17 @@ var config = jsonfile.readFileSync('./core/processors/definebabe.json');
 var funstions = {
   execute: function (cmd) {
     var page = Math.floor((Math.random() * config[cmd.cmd].limit));
-    var searchURL = config[cmd.cmd].url + '/page' + page;
+    if (Math.floor(Math.random() * 2) === 0) {
+      page = Math.floor(page / 2);
+      if (Math.floor(Math.random() * 2) === 0) {
+        page = Math.floor(page / 2);
+      }
+    }
+    console.log(page);
+    var searchURL = config[cmd.cmd].url;
+    if (page > 0) {
+      searchURL += '/page' + page;
+    }
 
     request(searchURL, function (error, response, results) {
       if (!error) {
