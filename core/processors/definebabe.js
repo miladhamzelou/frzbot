@@ -1,12 +1,13 @@
 var request = require('request');
 var cheerio = require('cheerio');
+var jsonfile = require('jsonfile');
 var util = require('./../util');
+var config = jsonfile.readFileSync('./core/processors/definebabe.json');
 
 var funstions = {
   execute: function (cmd) {
-    var page = Math.floor((Math.random() * 1095));
-    console.log(page);
-    var searchURL = 'http://www.definebabe.com/galleries/page' + page;
+    var page = Math.floor((Math.random() * config[cmd.cmd].limit));
+    var searchURL = config[cmd.cmd].url + '/page' + page;
 
     request(searchURL, function (error, response, results) {
       if (!error) {

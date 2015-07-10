@@ -82,10 +82,6 @@
   "aliases": ["cunt", "کس", "vagina", "واژن", "kos", "vazhan"],
   "processor": "tumblr.js"
 }, {
-  "cmd": "dick",
-  "aliases": ["penis", "cock", "kir", "کیر", "dool", "doodool", "dul", "dudul", "shoombool", "shumbul", "دول", "شومبول", "دودول"],
-  "processor": "tumblr.js"
-}, {
   "cmd": "porn",
   "aliases": ["پورن", "fuck", "گا", "sex", "سکس"],
   "processor": "tumblr.js"
@@ -94,13 +90,13 @@
   "aliases": ["تتو", "خالکوبی", "خال کوبی"],
   "processor": "tumblr.js"
 }, {
-  "cmd": "nude",
-  "aliases": ["لخت", "sensual", "nudeart"],
-  "processor": "tumblr.js"
+  "cmd": "art",
+  "aliases": ["nude", "لخت", "sensual", "nudeart"],
+  "processor": "definebabe.js"
 }, {
   "cmd": "brunette",
   "aliases": ["brun"],
-  "processor": "tumblr.js"
+  "processor": "definebabe.js"
 }, {
   "cmd": "pale",
   "aliases": ["white"],
@@ -112,5 +108,20 @@
 }, {
   "cmd": "definebabe",
   "aliases": ["db"],
+  "processor": "definebabe.js"
+}, {
+  "cmd": "lesbian",
+  "aliases": ["les"],
+  "processor": "definebabe.js"
+}, {
+  "cmd": "bikini",
+  "aliases": ["bik"],
+  "processor": "definebabe.js"
+}, {
+  "cmd": "asian",
+  "processor": "definebabe.js"
+}, {
+  "cmd": "pornstar",
+  "aliases": ["ps"],
   "processor": "definebabe.js"
 }]
