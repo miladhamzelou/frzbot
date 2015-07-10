@@ -3,7 +3,6 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs');
 var jsonfile = require('jsonfile');
-var shelljs = require('shelljs');
 var config = jsonfile.readFileSync('./config.json');
 var env = process.env.NODE_ENV;
 
@@ -26,13 +25,14 @@ var functions = {
     function callback(response) {
       response.pipe(file);
       file.on('finish', function () {
+        /*var shelljs = require('shelljs');
         if(resize) {
           var shellCommand = 'gifsicle --resize 160x120 --colors 128 --batch ' + fileName;
           var result = shelljs.exec(shellCommand, {silent: true});
           if (result.code !== 0) {
             console.log('err');
           }
-        }
+        }*/
         send();
       });
     }

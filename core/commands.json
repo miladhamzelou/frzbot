@@ -109,4 +109,8 @@
   "cmd": "pornhub",
   "aliases": ["ph"],
   "processor": "pornhub.js"
+}, {
+  "cmd": "definebabe",
+  "aliases": ["db"],
+  "processor": "definebabe.js"
 }]
