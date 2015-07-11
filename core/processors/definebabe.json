@@ -4,27 +4,27 @@
     "url": "http://www.definebabe.com/galleries/"
   },
   "art": {
-    "limit": 9,
+    "limit": 3,
     "url": "http://www.definebabe.com/view/photographic-art/"
   },
   "lesbian": {
-    "limit": 30,
+    "limit": 10,
     "url": "http://www.definebabe.com/view/lesbians/by-rate/"
   },
   "bikini": {
-    "limit": 5,
+    "limit": 2,
     "url": "http://www.definebabe.com/view/bikini/by-rate/"
   },
   "asian": {
-    "limit": 15,
+    "limit": 5,
     "url": "http://www.definebabe.com/view/asians/by-rate/"
   },
   "brunette": {
-    "limit": 100,
+    "limit": 30,
     "url": "http://www.definebabe.com/view/brunettes/by-rate/"
   },
   "pornstar": {
-    "limit": 15,
+    "limit": 3,
     "url": "http://www.definebabe.com/view/porn-stars/by-rate/"
   }
 }
