@@ -7,8 +7,9 @@ var funstions = {
     request('http://nudeclassical.com/random/', function (error, response, results) {
       if (!error) {
         var ch = cheerio.load(results);
-        var imgs = ch('div.maincontent img.ph1000');
-        var imageUrl = ch(imgs[0]).attr('src');
+        var imgs = ch('img.ph1000');
+        var imageUrl = imgs.attr('src');
+        console.log(imageUrl);
         data = {
           chat_id: cmd.chat.id,
           imageUrl: 'http://nudeclassical.com' + imageUrl
