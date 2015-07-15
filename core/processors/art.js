@@ -11,7 +11,7 @@ var funstions = {
         var imageUrl = ch(imgs[0]).attr('src');
         data = {
           chat_id: cmd.chat.id,
-          imageUrl: 'http://nudeclassical.com' + imageLink
+          imageUrl: 'http://nudeclassical.com' + imageUrl
         };
         util.sendImageFromUrl(data);
       }
