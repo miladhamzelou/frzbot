@@ -92,7 +92,7 @@
 }, {
   "cmd": "art",
   "aliases": ["nude", "لخت", "sensual", "nudeart"],
-  "processor": "definebabe.js"
+  "processor": "art.js"
 }, {
   "cmd": "brunette",
   "aliases": ["brun"],
