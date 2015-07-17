@@ -4,9 +4,8 @@ var Command = require('./../../models/Command');
 var functions = {
   execute: function(cmd) {
     Command.find({}).exec(function(err, commands) {
-      var map = {
-        all: 0
-      };
+      var all = 0;
+      var map = {};
       commands.forEach(function(command) {
         if(map[command.cmd]) {
           map[command.cmd]++;
@@ -14,24 +13,24 @@ var functions = {
         else {
           map[command.cmd] = 1;
         }
-        map.all++;
+        all++;
       });
-
-      var message = '';
+      var sortable = [];
       Object.keys(map).forEach(function(key) {
-        if(key === 'all') {
-          message += 'All commands count: ' + map.all + '\n';
-          return;
-        }
-        var percent = (map[key] / map.all) * 100;
-        var colonCount = Math.floor((map[key] / map.all) * 40);
-        message += key + ':\n';
-        for(; colonCount > 0; colonCount--) {
+        sortable.push([key, map[key]]);
+      });
+      sortable.sort(function(a, b) {
+        return b[1] - a[1];
+      });
+      var message = 'All commands count: ' + all + '\n';
+      sortable.forEach(function(pair) {
+        var percent = (pair[1] / all) * 100;
+        message += pair[0] + '\n';
+        for(var i = 0; i < percent; i++) {
           message += ':';
         }
         message += ' ' + percent.toFixed(2) + '%\n';
       });
-
       var data = {
         chat_id: 21826676,
         text: message
