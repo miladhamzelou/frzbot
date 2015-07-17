@@ -20,6 +20,9 @@
   "cmd": "allUsers",
   "processor": "admin/allUsers.js"
 }, {
+  "cmd": "commandsStats",
+  "processor": "admin/commandsStats.js"
+}, {
   "cmd": "broadcast",
   "processor": "admin/broadcast.js"
 }, {
