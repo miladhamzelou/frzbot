@@ -1,7 +1,4 @@
 [{
-  "cmd": "test",
-  "processor": "test.js"
-},{
   "cmd": "getInfo",
   "processor": "admin/getInfo.js"
 }, {
@@ -72,6 +69,10 @@
   "cmd": "lyric",
   "aliases": ["l"],
   "processor": "lyric.js"
+},{
+  "cmd": "news",
+  "aliases": ["خبر"],
+  "processor": "news.js"
 }, {
   "cmd": "boobs",
   "aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],

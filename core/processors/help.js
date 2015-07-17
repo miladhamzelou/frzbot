@@ -33,6 +33,9 @@ var functions = {
     message += 'متن آهنگ:' + '\n';
     message += '/lyric [نام آهنگ]' + '\n';
     message += 'shortcuts: /l' + '\n';
+    message += 'اخبار:' + '\n';
+    message += '/news' + '\n';
+    message += 'shortcuts: /خبر' + '\n';
     message += '\n' + '* کروشه ها پارامترهای اجباری و پرانتزها پارامترهای اختیاری هستند.' + '\n';
     message += '** نیازی به تایپ کردن کروشه و پرانتز نیست.' + '\n';
 

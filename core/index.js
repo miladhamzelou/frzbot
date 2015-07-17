@@ -95,8 +95,7 @@ var privates = {
 		command.timestamp = new Date().getTime();
 
 		command.save(function(err) {
-			command.chat = {};
-			command.chat.id = command.group ? command.group._id : command.sender._id;
+			command.chat = command.group ? command.group : command.sender;
 			privates.checkAccess(command);
 		});
 	},
