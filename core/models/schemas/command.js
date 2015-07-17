@@ -7,7 +7,9 @@ var commandSchema = new Schema({
   processor: { type: String },
   sender: { type: Number, ref: 'User' },
   group: { type: Number, ref: 'Group' },
-  timestamp: { type: Number }
+  timestamp: { type: Number },
+  messageId: { type: Number },
+  replyToCommand: { type: Schema.Types.ObjectId, ref: 'Command' }
 });
 
 module.exports = commandSchema;

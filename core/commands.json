@@ -1,4 +1,7 @@
 [{
+  "cmd": "test",
+  "processor": "test.js"
+},{
   "cmd": "getInfo",
   "processor": "admin/getInfo.js"
 }, {
