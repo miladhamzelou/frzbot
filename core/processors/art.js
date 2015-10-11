@@ -7,7 +7,7 @@ var funstions = {
     request('http://nudeclassical.com/random/', function (error, response, results) {
       if (!error) {
         var ch = cheerio.load(results);
-        var imgs = ch('img.ph1000');
+        var imgs = ch('img.img-responsive');
         var imageUrl = imgs.attr('src');
         console.log(imageUrl);
         data = {
