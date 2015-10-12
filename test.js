@@ -15,7 +15,7 @@ var data = {
 			"username": "firiz"
 		},
 		"date": 1435920104,
-		"text": "\/9gag"
+		"text": "\/fall"
 	}
 };
 

@@ -20,6 +20,8 @@ var functions = {
       callback('weather');
     } else if (privates.match(text, ['فال', 'حافظ', 'شعر', 'غزل'])) {
       callback('hafez');
+    } else if (privates.match(text, ['پاییز'])) {
+      callback('fall');
     }
   }
 };

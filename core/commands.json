@@ -76,6 +76,10 @@
   "cmd": "news",
   "aliases": ["خبر"],
   "processor": "news.js"
+},{
+  "cmd": "fall",
+  "aliases": ["پاییز"],
+  "processor": "fall.js"
 }, {
   "cmd": "boobs",
   "aliases": ["pestun", "mame", "پستون", "ممه", "سینه", "sine", "breast", "pestoon"],
