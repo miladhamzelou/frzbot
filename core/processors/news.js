@@ -61,9 +61,15 @@ var functions = {
         text += '-------------------- \n';
 
         if (maxLength % 5 === 1) {
+          var keyboard = {
+            hide_keyboard: true,
+            selective: false
+          };
+
           var data = {
             chat_id: cmd.chat.id,
             text: text,
+            reply_markup: JSON.stringify(keyboard),
             disable_web_page_preview: true
           };
           util.sendMessage(data);

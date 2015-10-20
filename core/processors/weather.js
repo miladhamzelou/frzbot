@@ -35,8 +35,15 @@ var functions = {
       if (!error) {
         results = JSON.parse(results);
         var temp = results.main.temp.toFixed(1);
+
+        var keyboard = {
+          hide_keyboard: true,
+          selective: false
+        };
+
         var data = {
           chat_id: cmd.chat.id,
+          reply_markup: JSON.stringify(keyboard),
           text: 'دمای هوای ' + cmd.args + ' برابر است با ' + temp + ' درجه سانتیگراد.'
         };
 

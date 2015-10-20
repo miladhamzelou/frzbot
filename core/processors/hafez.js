@@ -48,8 +48,14 @@ var functions = {
           message += 'سرویس در دسترس نیست!';
         }
 
+        var keyboard = {
+          hide_keyboard: true,
+          selective: false
+        };
+
         var data = {
           chat_id: cmd.chat.id,
+          reply_markup: JSON.stringify(keyboard),
           text: message
         };
         util.sendMessage(data);
