@@ -1,5 +1,6 @@
 {
   "0": {
+    "text": "I am sleepy, bye!",
     "nextState": ["1"]
   },
   "1": {

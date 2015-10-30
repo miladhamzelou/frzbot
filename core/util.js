@@ -13,20 +13,7 @@ var functions = {
 			form: data
 		};
 		request.post(options, function(err, httpResponse, body) {
-			body = JSON.parse(body);
-			if (body.result.reply_to_message) {
-				var messageId = body.result.message_id;
-				var replyToMessageId = body.result.reply_to_message.message_id;
-				Command.update({
-					messageId: replyToMessageId
-				}, {
-					messageId: messageId
-				}).exec(function(err) {
-					if (err) {
-						console.log(err);
-					}
-				});
-			}
+			console.log("message sent.");
 		});
 	},
 	sendImageFromUrl: function(data) {
