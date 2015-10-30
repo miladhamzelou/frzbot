@@ -1,9 +1,9 @@
 var request = require('request');
 
 var data = {
-	"update_id": 356426834,
+	"update_id": 42653412,
 	"message": {
-		"message_id": 6015,
+		"message_id": 6,
 		"from": {
 			"id": 21826676,
 			"first_name": "Farshad",
@@ -12,10 +12,11 @@ var data = {
 		"chat": {
 			"id": 21826676,
 			"first_name": "Farshad",
-			"username": "firiz"
+			"username": "firiz",
+			"type": "private"
 		},
-		"date": 1435920104,
-		"text": "\/fall"
+		"date": 1446234935,
+		"text": "Farshad"
 	}
 };
 

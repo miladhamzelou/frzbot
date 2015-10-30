@@ -2,7 +2,6 @@ var request = require('request');
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
-var Command = require('./models/Command');
 var jsonfile = require('jsonfile');
 var config = jsonfile.readFileSync('./config.json');
 var env = process.env.NODE_ENV;

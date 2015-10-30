@@ -1,0 +1,24 @@
+{
+  "0": {
+    "nextState": ["1"]
+  },
+  "1": {
+    "text": "Hey there, I am Cute Dog 🐶! Do you wanna talk to me?",
+    "keyboard": [["Sure! 😊", "No, I don't like you! 😒"]],
+    "answerNextState": [["2", "3"]]
+  },
+  "2": {
+    "text": "Good, What's your name?",
+    "nextState": "4"
+  },
+  "3": {
+    "text": "OH! 😞 Come on! I am lonely... talk to meeeee!",
+    "keyboard": [["OK..."]],
+    "nextState": "2"
+  },
+  "4": {
+    "text": "What a lovely name <3",
+    "keyboard": [["Thanks!"]],
+    "nextState": "4"
+  }
+}

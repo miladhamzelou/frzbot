@@ -2,15 +2,13 @@
   "dev": {
     "url": {
       "rec": "/",
-      "snd": "https://api.telegram.org/bot120271554:AAGYxfM50KWuaSkBXT_HRnmmq9iw8YrOcgc/"
-    },
-    "dbUrl": "mongodb://localhost/frzbot"
+      "snd": "https://api.telegram.org/bot145175461:AAE_dsuYYTLxXip76Jz7pxvQZONvf39Aw6I/"
+    }
   },
   "pro" :{
     "url": {
-      "rec": "/120271554:AAGYxfM50KWuaSkBXT_HRnmmq9iw8YrOcgc",
-      "snd": "https://api.telegram.org/bot120271554:AAGYxfM50KWuaSkBXT_HRnmmq9iw8YrOcgc/"
-    },
-    "dbUrl": "mongodb://localhost/frzbot"
+      "rec": "/145175461:AAE_dsuYYTLxXip76Jz7pxvQZONvf39Aw6I",
+      "snd": "https://api.telegram.org/bot145175461:AAE_dsuYYTLxXip76Jz7pxvQZONvf39Aw6I/"
+    }
   }
 }
