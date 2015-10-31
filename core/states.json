@@ -114,8 +114,76 @@
     "answerNextState": [["18", "19"], ["20", "20"]]
   },
   "23": {
-    "text": "I don't need anyone... I am an independent dog!",
+    "text": "I don't need anyone... I am an independent dog! I'll survive :D",
     "keyboard": [["Oh I see..."]],
+    "nextState": "24"
+  },
+  "24": {
+    "text": "Yeah... Can I tell you a secret? 😉",
+    "keyboard": [["Sure!"]],
+    "nextState": "25"
+  },
+  "25": {
+    "text": "There is this dog... I like her kinda... she is sooo beautiful ❤",
+    "keyboard": [["Seriously? do you have any pics?"]],
+    "nextState": "26"
+  },
+  "26": {
+    "text": "Yeeeah... here she is 😍",
+    "photo": "female.jpg",
+    "keyboard": [["😍😍😍😍😍"]],
+    "nextState": "27"
+  },
+  "27": {
+    "text": "I knowwww, isn't she great? and sexy...",
+    "keyboard": [["Yeeeh! look at that dress she is wearing 😝" , "Yes... I mean... I think you are overreacting a litle..."]],
+    "answerNextState": [["28", "29"]]
+  },
+  "28": {
+    "text": "She just added me on Facebook and this was her profile picture :>",
+    "keyboard": [["Good for you... :)"]],
+    "nextState": "30"
+  },
+  "29": {
+    "text": "😳😡",
+    "keyboard": [["No no... You know what? I've changed my mind... she is great :-\""]],
+    "nextState": "28"
+  },
+  "30": {
+    "text": "I like her smile... 😊",
+    "keyboard": [["Nice :p what else?"]],
+    "nextState": "31"
+  },
+  "31": {
+    "text": "I don't know... she is caring... she makes me feel calm... she is classy... ",
+    "keyboard": [["Wow! she is perfect... 👍"]],
+    "nextState": "32"
+  },
+  "32": {
+    "text": "You tell me 😌. Do you want a cup of coffee?",
+    "keyboard": [["Sure ;)" , "I'll have tea if it's possible :) coffee makes it hard for me to sleep..."]],
+    "answerNextState": [["33", "34"]]
+  },
+  "33": {
+    "text": "Here you are 🍹... and this one is mine 🍹 also enjoy this great view while drinking your coffee :)",
+    "photo": "tehran.jpg",
+    "keyboard": [["Thanks Cute Dog!"]],
+    "nextState": "35"
+  },
+  "34": {
+    "text": "Here's your tea 🍵 and this is my coffee 🍹 also enjoy this great view while drinking your tea :)",
+    "photo": "tehran.jpg",
+    "keyboard": [["Thanks Cute Dog!"]],
+    "nextState": "35"
+  },
+  "35": {
+    "text": "You're welcome... You know what? I think I should tell her that I like her and I want her to be my girlfriend...",
+    "keyboard": [["How you are going to tell her?"]],
+    "nextState": "36"
+  },
+  "36": {
+    "text": "I think I just did... I'm waiting for her to put her phone away and tell her feelings toward me...",
+    "keyboard": [["Oh..."]],
     "nextState": "0"
   }
 }
