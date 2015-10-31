@@ -18,8 +18,64 @@
     "nextState": "2"
   },
   "4": {
-    "text": "What a lovely name <3",
+    "text": "What a lovely name ❤",
     "keyboard": [["Thanks!"]],
+    "nextState": "5"
+  },
+  "5": {
+    "text": "You know my name?",
+    "keyboard": [["Yes 😁", "No 😨"]],
+    "answerNextState": [["6", "7"]]
+  },
+  "6": {
+    "text": "Don't lie to me! 😳",
+    "keyboard": [["Ha ha... I was joking! 😝"]],
+    "nextState": "8"
+  },
+  "7": {
+    "text": "I realy don't have a name... everybody calls me Cute Dog I guess... ",
+    "keyboard": [["That's cute 😍 I mean you're cute :D", "I think you need a name!"]],
+    "answerNextState": [["9", "10"]]
+  },
+  "8": {
+    "text": "Oh well... I am sry to tell you this but you suck at joking :)) kidding :D",
+    "keyboard": [["Thanks 😒 what's your name though...", "I know... 😔 tell me your name"]],
+    "nextState": "7"
+  },
+  "9": {
+    "text": "I know :> Do you wanna see me naked?",
+    "keyboard": [["That would be great! 😝", "Why are you naked? 🙊"]],
+    "answerNextState": [["11", "12"]]
+  },
+  "10": {
+    "text": "I think I am OK with the Cute Dog thing! Do you wanna see me naked?",
+    "keyboard": [["That would be great! 😝", "Why are you naked? 🙊"]],
+    "answerNextState": [["11", "12"]]
+  },
+  "11": {
+    "text": "So... this is me 😎",
+    "photo": "selfie.jpg",
+    "keyboard": [["Wooow! you are adorable 😍"]],
+    "nextState": "13"
+  },
+  "12": {
+    "text": "Because I am a dog... I am always naked!",
+    "keyboard": [["Heh! you're right :))"]],
+    "nextState": "11"
+  },
+  "13": {
+    "text": "Now it's your turn... if you are naked :>",
+    "keyboard": [["I am not you sick dog 😡", "I am 👙... but I won't do it 😳"]],
+    "answerNextState": [["14", "15"]]
+  },
+  "14": {
+    "text": "Joking :D worth a shot by the way...",
+    "keyboard": [["ha ha!"]],
+    "nextState": "0"
+  },
+  "15": {
+    "text": "Why are you naked?! :O",
+    "keyboard": [["I don't know... 😂"]],
     "nextState": "0"
   }
 }

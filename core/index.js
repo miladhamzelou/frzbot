@@ -1,6 +1,6 @@
 var util = require('./util');
 var states = require('./states.json');
-var stateId = "0";
+var stateId = "10";
 
 var functions = {
   proccessUpdate: function (update) {
@@ -42,6 +42,15 @@ var functions = {
     };
 
     util.sendMessage(data);
+
+    if(state.photo) {
+      var data = {
+        chat_id: update.message.chat.id,
+        reply_markup: JSON.stringify(keyboard)
+      };
+
+      util.sendImage(data, state.photo);
+    }
   }
 };
 

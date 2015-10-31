@@ -16,7 +16,7 @@ var data = {
 			"type": "private"
 		},
 		"date": 1446234935,
-		"text": "Farshad"
+		"text": "That would be great! 😝"
 	}
 };
 
