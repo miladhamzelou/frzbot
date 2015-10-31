@@ -71,11 +71,51 @@
   "14": {
     "text": "Joking :D worth a shot by the way...",
     "keyboard": [["ha ha!"]],
-    "nextState": "0"
+    "nextState": "16"
   },
   "15": {
     "text": "Why are you naked?! :O",
     "keyboard": [["I don't know... 😂"]],
+    "nextState": "16"
+  },
+  "16": {
+    "text": "Hey! remember when I told you I am lonely... now I am lonely and hungry...",
+    "keyboard": [["I can feed you if you want..."]],
+    "nextState": "17"
+  },
+  "17": {
+    "text": "Sure :> what do you have?",
+    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
+    "answerNextState": [["18", "19"], ["20", "20"]]
+  },
+  "18": {
+    "text": "You know dogs are not vegie, right?",
+    "keyboard": [["Oh... sorry!"]],
+    "nextState": "21"
+  },
+  "19": {
+    "text": "Thank you... but I actually need some meat with that!",
+    "keyboard": [["OK :D I have some"]],
+    "nextState": "22"
+  },
+  "20": {
+    "text": "I love you human... Now I am back to being just lonely :))",
+    "keyboard": [["Why you are lonely? I mean isn't there anybody to take care of you? 😳"]],
+    "nextState": "23"
+  },
+  "21": {
+    "text": "Anything else?",
+    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
+    "answerNextState": [["18", "19"], ["20", "20"]]
+  },
+  "22": {
+    "text": "Realy? then give me some... 😋",
+    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
+    "answerNextState": [["18", "19"], ["20", "20"]]
+  },
+  "23": {
+    "text": "I don't need anyone... I am an independent dog!",
+    "keyboard": [["Oh I see..."]],
     "nextState": "0"
   }
 }
