@@ -1,6 +1,6 @@
 var util = require('./util');
 var states = require('./states.json');
-var stateId = "10";
+var stateId = "0";
 
 var functions = {
   proccessUpdate: function (update) {
