@@ -243,9 +243,9 @@
     "nextState": "31"
   },
   "31": {
-    "text": "I don't know... she is caring... she makes me feel calm... she is classy and charming... I'm better version of me when im with her!",
+    "text": "I don't know... she is caring... she makes me feel calm... she is classy and charming... I mean I'm better version of me when im with her!",
     "keyboard": [
-      ["Wow! she is perfect... 👍"]
+      ["Wow! she is perfect then... 👍"]
     ],
     "nextState": "32"
   },
@@ -272,18 +272,27 @@
     "text": "Here's your tea 🍵 and this is my coffee 🍹 also enjoy this great view while drinking your tea :)",
     "photo": "tehran.jpg",
     "keyboard": [
-      ["Thanks Cute Dog!"]
+      ["Thanks Cute Dog!", "Wow! I realy like this picture..."]
     ],
-    "nextState": "35"
+    "answerNextState": [
+      ["35", "36"]
+    ]
   },
   "35": {
     "text": "You're welcome... You know what? I think I should tell her that I like her and I want her to be my queen dog...",
     "keyboard": [
       ["How you are going to tell her?"]
     ],
-    "nextState": "36"
+    "nextState": "37"
   },
   "36": {
+    "text": "Thanks... she likes it too <3",
+    "keyboard": [
+      ["It is fantastic... thanks for sharing :)"]
+    ],
+    "nextState": "35"
+  },
+  "37": {
     "text": "I think I just did... I'm waiting for her to put her phone away and tell her feelings toward me..."
   }
 }
