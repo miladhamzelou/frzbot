@@ -264,9 +264,11 @@
     "text": "Here you are 🍹... and this one is mine 🍹 also enjoy this great view while drinking your coffee :)",
     "photo": "tehran.jpg",
     "keyboard": [
-      ["Thanks Cute Dog!"]
+      ["Thanks Cute Dog!", "Wow! I realy like this picture..."]
     ],
-    "nextState": "35"
+    "answerNextState": [
+      ["35", "36"]
+    ]
   },
   "34": {
     "text": "Here's your tea 🍵 and this is my coffee 🍹 also enjoy this great view while drinking your tea :)",
