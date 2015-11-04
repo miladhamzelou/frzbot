@@ -5,185 +5,285 @@
   },
   "1": {
     "text": "Hey there, I am Cute Dog 🐶! Do you wanna talk to me?",
-    "keyboard": [["Sure! 😊", "No, I don't like you! 😒"]],
-    "answerNextState": [["2", "3"]]
+    "keyboard": [
+      ["Sure! 😊", "No, I don't like you! 😒"]
+    ],
+    "answerNextState": [
+      ["2", "3"]
+    ]
   },
   "2": {
     "text": "Good, What's your name?",
     "nextState": "4"
   },
   "3": {
-    "text": "OH! 😞 Come on! I am lonely... talk to meeeee!",
-    "keyboard": [["OK..."]],
+    "text": "OH! 😞 Come on! I am bored... talk to meeeee!",
+    "keyboard": [
+      ["OK..."]
+    ],
     "nextState": "2"
   },
   "4": {
     "text": "What a lovely name ❤",
-    "keyboard": [["Thanks!"]],
+    "keyboard": [
+      ["Thanks!"]
+    ],
     "nextState": "5"
   },
   "5": {
     "text": "You know my name?",
-    "keyboard": [["Yes 😁", "No 😨"]],
-    "answerNextState": [["6", "7"]]
+    "keyboard": [
+      ["Yes 😁", "No 😨"]
+    ],
+    "answerNextState": [
+      ["6", "7"]
+    ]
   },
   "6": {
     "text": "Don't lie to me! 😳",
-    "keyboard": [["Ha ha... I was joking! 😝"]],
+    "keyboard": [
+      ["Ha ha... I was joking! 😝"]
+    ],
     "nextState": "8"
   },
   "7": {
     "text": "I realy don't have a name... everybody calls me Cute Dog I guess... ",
-    "keyboard": [["That's cute 😍 I mean you're cute :D", "I think you need a name!"]],
-    "answerNextState": [["9", "10"]]
+    "keyboard": [
+      ["That's cute 😍 I mean you're cute :D", "I think you need a name!"]
+    ],
+    "answerNextState": [
+      ["9", "10"]
+    ]
   },
   "8": {
     "text": "Oh well... I am sry to tell you this but you suck at joking :)) kidding :D",
-    "keyboard": [["Thanks 😒 what's your name though...", "I know... 😔 tell me your name"]],
+    "keyboard": [
+      ["Thanks 😒 what's your name though...",
+        "I know... 😔 tell me your name"
+      ]
+    ],
     "nextState": "7"
   },
   "9": {
     "text": "I know :> Do you wanna see me naked?",
-    "keyboard": [["That would be great! 😝", "Why are you naked? 🙊"]],
-    "answerNextState": [["11", "12"]]
+    "keyboard": [
+      ["That would be great! 😝", "Why are you naked? 🙊"]
+    ],
+    "answerNextState": [
+      ["11", "12"]
+    ]
   },
   "10": {
     "text": "I think I am OK with the Cute Dog thing! Do you wanna see me naked?",
-    "keyboard": [["That would be great! 😝", "Why are you naked? 🙊"]],
-    "answerNextState": [["11", "12"]]
+    "keyboard": [
+      ["That would be great! 😝", "Why are you naked? 🙊"]
+    ],
+    "answerNextState": [
+      ["11", "12"]
+    ]
   },
   "11": {
     "text": "So... this is me 😎",
     "photo": "selfie.jpg",
-    "keyboard": [["Wooow! you are adorable 😍"]],
+    "keyboard": [
+      ["Wooow! you are adorable 😍"]
+    ],
     "nextState": "13"
   },
   "12": {
     "text": "Because I am a dog... I am always naked!",
-    "keyboard": [["Heh! you're right :))"]],
+    "keyboard": [
+      ["Heh! you're right :))"]
+    ],
     "nextState": "11"
   },
   "13": {
     "text": "Now it's your turn... if you are naked :>",
-    "keyboard": [["I am not you sick dog 😡", "I am 👙... but I won't do it 😳"]],
-    "answerNextState": [["14", "15"]]
+    "keyboard": [
+      ["I am not you sick dog 😡", "I am 👙... but I won't do it 😳"]
+    ],
+    "answerNextState": [
+      ["14", "15"]
+    ]
   },
   "14": {
     "text": "Joking :D worth a shot by the way...",
-    "keyboard": [["ha ha!"]],
+    "keyboard": [
+      ["ha ha!"]
+    ],
     "nextState": "16"
   },
   "15": {
     "text": "Why are you naked?! :O",
-    "keyboard": [["I don't know... 😂"]],
+    "keyboard": [
+      ["I don't know... 😂"]
+    ],
     "nextState": "16"
   },
   "16": {
-    "text": "Hey! remember when I told you I am lonely... now I am lonely and hungry...",
-    "keyboard": [["I can feed you if you want..."]],
+    "text": "Hey! remember when I told you I am cute... now I am cute and hungry...",
+    "keyboard": [
+      ["I can feed you if you want..."]
+    ],
     "nextState": "17"
   },
   "17": {
-    "text": "Sure :> what do you have?",
-    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
-    "answerNextState": [["18", "19"], ["20", "20"]]
+    "text": "That would be great :> what do you have?",
+    "keyboard": [
+      ["🍏", "🍞"],
+      ["🍖", "🍔"]
+    ],
+    "answerNextState": [
+      ["18", "19"],
+      ["20", "20"]
+    ]
   },
   "18": {
-    "text": "You know dogs are not vegie, right?",
-    "keyboard": [["Oh... sorry!"]],
+    "text": "You know dogs are not vegan, right?",
+    "keyboard": [
+      ["Oh... sorry!"]
+    ],
     "nextState": "21"
   },
   "19": {
     "text": "Thank you... but I actually need some meat with that!",
-    "keyboard": [["OK :D I have some"]],
+    "keyboard": [
+      ["OK :D I have some"]
+    ],
     "nextState": "22"
   },
   "20": {
-    "text": "I love you human... Now I am back to being just lonely :))",
-    "keyboard": [["Why you are lonely? I mean isn't there anybody to take care of you? 😳"]],
+    "text": "I love you human... Now I am back to being just cute :))",
+    "keyboard": [
+      ["You're funny :))"]
+    ],
     "nextState": "23"
   },
   "21": {
     "text": "Anything else?",
-    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
-    "answerNextState": [["18", "19"], ["20", "20"]]
+    "keyboard": [
+      ["🍏", "🍞"],
+      ["🍖", "🍔"]
+    ],
+    "answerNextState": [
+      ["18", "19"],
+      ["20", "20"]
+    ]
   },
   "22": {
     "text": "Realy? then give me some... 😋",
-    "keyboard": [["🍏", "🍞"], ["🍖", "🍔"]],
-    "answerNextState": [["18", "19"], ["20", "20"]]
+    "keyboard": [
+      ["🍏", "🍞"],
+      ["🍖", "🍔"]
+    ],
+    "answerNextState": [
+      ["18", "19"],
+      ["20", "20"]
+    ]
   },
   "23": {
-    "text": "I don't need anyone... I am an independent dog! I'll survive :D",
-    "keyboard": [["Oh I see..."]],
+    "text": "I know... there are a lot of things you don't know about me :O",
+    "keyboard": [
+      ["Oh I see..."]
+    ],
     "nextState": "24"
   },
   "24": {
     "text": "Yeah... Can I tell you a secret? 😉",
-    "keyboard": [["Sure!"]],
+    "keyboard": [
+      ["Sure!"]
+    ],
     "nextState": "25"
   },
   "25": {
-    "text": "There is this dog... I like her kinda... she is sooo beautiful ❤",
-    "keyboard": [["Seriously? do you have any pics?"]],
+    "text": "There is this dog... I kinda like her... she is beautiful ❤",
+    "keyboard": [
+      ["Seriously? do you have any pics?"]
+    ],
     "nextState": "26"
   },
   "26": {
     "text": "Yeeeah... here she is 😍",
     "photo": "female.jpg",
-    "keyboard": [["😍😍😍😍😍"]],
+    "keyboard": [
+      ["😍😍😍😍😍"]
+    ],
     "nextState": "27"
   },
   "27": {
     "text": "I knowwww, isn't she great? and sexy...",
-    "keyboard": [["Yeeeh! look at that dress she is wearing 😝" , "Yes... I mean... I think you are overreacting a litle..."]],
-    "answerNextState": [["28", "29"]]
+    "keyboard": [
+      ["Yeeeh! look at that dress she is wearing 😝",
+        "Yes... I mean... I think you are overreacting a litle..."
+      ]
+    ],
+    "answerNextState": [
+      ["28", "29"]
+    ]
   },
   "28": {
     "text": "She just added me on Facebook and this was her profile picture :>",
-    "keyboard": [["Good for you... :)"]],
+    "keyboard": [
+      ["Good for you... :)"]
+    ],
     "nextState": "30"
   },
   "29": {
     "text": "😳😡",
-    "keyboard": [["No no... You know what? I've changed my mind... she is great :-\""]],
+    "keyboard": [
+      ["No no... You know what? I've changed my mind... she is great :-\""]
+    ],
     "nextState": "28"
   },
   "30": {
     "text": "I like her smile... 😊",
-    "keyboard": [["Nice :p what else?"]],
+    "keyboard": [
+      ["Nice :p what else?"]
+    ],
     "nextState": "31"
   },
   "31": {
-    "text": "I don't know... she is caring... she makes me feel calm... she is classy... ",
-    "keyboard": [["Wow! she is perfect... 👍"]],
+    "text": "I don't know... she is caring... she makes me feel calm... she is classy and charming... I'm better version of me when im with her!",
+    "keyboard": [
+      ["Wow! she is perfect... 👍"]
+    ],
     "nextState": "32"
   },
   "32": {
     "text": "You tell me 😌. Do you want a cup of coffee?",
-    "keyboard": [["Sure ;)" , "I'll have tea if it's possible :) coffee makes it hard for me to sleep..."]],
-    "answerNextState": [["33", "34"]]
+    "keyboard": [
+      ["Sure ;)",
+        "I'll have tea if it's possible :) coffee makes it hard for me to sleep..."
+      ]
+    ],
+    "answerNextState": [
+      ["33", "34"]
+    ]
   },
   "33": {
     "text": "Here you are 🍹... and this one is mine 🍹 also enjoy this great view while drinking your coffee :)",
     "photo": "tehran.jpg",
-    "keyboard": [["Thanks Cute Dog!"]],
+    "keyboard": [
+      ["Thanks Cute Dog!"]
+    ],
     "nextState": "35"
   },
   "34": {
     "text": "Here's your tea 🍵 and this is my coffee 🍹 also enjoy this great view while drinking your tea :)",
     "photo": "tehran.jpg",
-    "keyboard": [["Thanks Cute Dog!"]],
+    "keyboard": [
+      ["Thanks Cute Dog!"]
+    ],
     "nextState": "35"
   },
   "35": {
-    "text": "You're welcome... You know what? I think I should tell her that I like her and I want her to be my girlfriend...",
-    "keyboard": [["How you are going to tell her?"]],
+    "text": "You're welcome... You know what? I think I should tell her that I like her and I want her to be my queen dog...",
+    "keyboard": [
+      ["How you are going to tell her?"]
+    ],
     "nextState": "36"
   },
   "36": {
     "text": "I think I just did... I'm waiting for her to put her phone away and tell her feelings toward me...",
-    "keyboard": [["Oh..."]],
-    "nextState": "0"
   }
 }
